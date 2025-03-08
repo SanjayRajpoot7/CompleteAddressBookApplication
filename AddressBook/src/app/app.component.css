@@ -1,0 +1,184 @@
+/* address-book.component.css */
+.address-book {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+#head {
+  color: #314a66;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #495d72;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 12px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #4fef92;
+  box-shadow: 0 0 8px rgba(79, 239, 146, 0.5);
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4fef92;
+  color: rgb(20, 19, 19);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #d1cece;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #495d72;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e1e1e1;
+}
+
+p {
+  font-size: 1.2em;
+  color: #130228;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #314a66;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+#addressBookContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table,
+form {
+  width: 80%;
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .address-book {
+    width: 90%;
+    padding: 10px;
+  }
+
+  form {
+    grid-gap: 10px;
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .address-book {
+    width: 100%;
+  }
+
+  form {
+    grid-gap: 8px;
+    padding: 10px;
+  }
+
+  input, button {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+}
